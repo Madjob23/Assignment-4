@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style_3.css">
+    <link rel="icon" href="./images/Favicon.jpeg" type="image/jpeg">
+</head>
+<body>
+    <form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+        <h1>
+            CUSTOMER SATISFACTION SURVEY
+        </h1>
+        <br>
+        <h2>
+            Personal Details
+        </h2>
+        <hr class="section"><hr class="section"><br> 
+        <b>First Name</b><br>
+        <input class="box" type="text" name="first_name" maxlength="20" required>
+        <br><br>
+        <b>Last Name</b><br>
+        <input class="box"  type="text" name="last_name" maxlength="20" required>
+        <br><br><hr class="separator"><br>
+        <b>Address</b><br>
+        <input class="box" type="text" name="street_address" placeholder="Street Name" maxlength="50" required>
+        <br><input class="box" type="text" name="city" placeholder="City" maxlength="50" required>
+        <br><input class="box" type="text" name="State" placeholder="State" maxlength="50" required>
+        <br><input class="box" type="text" name="pincode" placeholder="Pin-code" maxlength="20" required>
+        <br><br><hr class="separator"><br>
+        <b>Contact No.</b><br>
+        <input class="box"  type="number" name="contact_number" onKeyPress="if(this.value.length==10) return false;" title="Enter your 10-digit Mobile Phone Number" required>
+        <br><br><br>
+        <h2>
+            Feedback Rating
+        </h2>
+        <hr class="section"><hr class="section"><br>
+        <b class="ratings">Quality of Products Recieved</b><br>
+        <label>Excellent<input type="radio" name="quality_of_products_received_rating" value="Excellent"></label>
+        <label>Good<input type="radio" name="quality_of_products_received_rating" value="Good"></label>
+        <label>Bad<input type="radio" name="quality_of_products_received_rating" value="Bad"></label>
+        <br><br>
+        <b class="ratings">Value for Money</b><br>
+        <label>Excellent<input type="radio" name="value_for_money_rating" value="Excellent"></label>
+        <label>Good<input type="radio" name="value_for_money_rating" value="Good"></label>
+        <label>Bad<input type="radio" name="value_for_money_rating" value="Bad"></label>
+        <br><br>
+        <b class="ratings">Delivery</b><br>
+        <label>Excellent<input type="radio" name="delivery_rating" value="Excellent"></label>
+        <label>Good<input type="radio" name="delivery_rating" value="Good"></label>
+        <label>Bad<input type="radio" name="delivery_rating" value="Bad"></label>
+        <br><br><br>
+        <button type="submit">Submit</button>
+        <br><br>
+    </form>
+</body>
+</html>
